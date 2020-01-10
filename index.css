@@ -1,0 +1,88 @@
+body {  
+    margin: 0;
+    padding: 1em;
+    background: url(Gif/giiiiif.gif) no-repeat center fixed;
+    /* opacity: 1; */
+    background-size: cover;
+    color: lavender;
+    font-family: 'Inconsolata', monospace;
+}
+
+.nom {
+    width: 400px;
+}
+
+.menu {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: lavender;
+    font-size: 25px;  
+}
+
+.menu a:hover {
+    color: aquamarine;
+}
+
+#texte {
+
+    
+    max-width: 600px;
+    text-align: center;
+    font-size: 27px;
+    color: lavender;
+    line-height: 1.5;
+    /*margin: 5.5% auto 0;*/
+    position: absolute;
+    left: calc(50% - 300px);
+    margin-top: 4.5%;
+
+     
+}
+
+button {
+
+    position: absolute;
+    bottom: 3%;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    font-size: x-large;
+    background-color: rgb(72, 72, 184);
+    color: lavender;
+    border-radius: 50%;
+    font-style: italic;
+    box-shadow: 0px 9px rgb(149, 149, 231);
+    border: none;
+    outline: none;
+    display: block;
+}
+
+button a {
+    text-decoration: none;
+    color: lavender;
+}
+
+button a:hover {
+    color: aquamarine;
+}
+
+button:hover {
+    transform: translateY(3px);
+    box-shadow: 0px 6px rgb(149, 149, 231);
+}
+
+button:active {
+    translate: translateY(6px);
+    box-shadow: 0px 2px rgb(149, 149, 231);
+}
+
+
+

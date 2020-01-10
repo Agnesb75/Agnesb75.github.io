@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeu</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    
+    <style>
+        body {  
+        margin: 0;
+        padding: 0;
+        background: url(Gif/etoiles.gif) no-repeat center fixed;
+        background-size: cover;
+        overflow: hidden;
+        font-family: 'Inconsolata', monospace;
+        color: lavender;
+        }
+        
+        .fleche {
+            width: 45px;
+            position: absolute;
+            top: 1em;
+            left: 10px;
+        }
+        #score {
+            position: absolute;
+            left: 80%;
+            font-size: 28px;
+        }
+
+        #btn {
+            position: absolute;
+            left: calc(50% - 32.5px);
+            width: 65px;
+            color: lavender;
+            background-color: black;
+            font-size: 15px;
+            border-radius: 10px;
+
+
+        }
+        /*
+
+        #winner {
+            position: absolute;
+            left: 35%;
+            top: 30%;
+            font-size: 100px;
+        }
+
+        #gameover {
+
+            position: absolute;
+            left: 32.5%;
+            top: 30%;
+            font-size: 100px;
+        }
+        
+        */
+    </style>
+
+</head>
+
+
+<body>
+    
+    <a href="Javascript:history.go(-1)"><img src="Images/flèche-blanche-png.png" class="fleche" alt="fleche"></a>
+    <button id="btn">Restart</button>
+    <h1 id="score">SCORE :</h1>
+    <h1 id="winner"> </h1>
+    <h1 id="gameover"> </h1>
+    
+    
+   
+  
+    
+    <script src="jeu.js"></script>
+    <script type="text/javascript">
+
+    
+    console.log('hello');
+    </script>
+    
+</body>
+</html>

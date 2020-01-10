@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Jeu-CV</title>
+</head>
+<body>
+
+    <div class="nom">
+        <h1>BOUTALBI Agnès</h1>
+        <p style="font-size: large;">Web Développeuse Full Stack JS</p>
+    </div>
+    
+    <div class="menu">
+        <nav>
+            <i class="fas fa-home"></i> <a href="index.html">Accueil</a>&emsp;&emsp;&emsp;&emsp;
+            <i class="far fa-file-pdf"></i> <a href="New CV dev - copie.pdf" target="_blank">Accéder au CV</a>&emsp;&emsp;&emsp;&emsp;
+            <i class="fas fa-phone-alt"></i> <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="texte">
+        
+    </div>
+
+    <button><a href="jeu.html">PLAY</a></button>
+
+    
+    
+    <script type="text/javascript">
+
+    //////// Faire apparaitre le texte lettre par lettre effet machine à écrire 
+
+    //////// Première méthode mais je n'arrive pas a la faire fonctionner 
+
+
+        // var i = 0;
+        // var txt = "Jeune Web développeuse en herbe, je vous propose de tester et de découvrir certaines de mes skills sous forme de jeu. Je suis actuellement à la recherche d'un stage afin de consolider et valider mes compétences et enfin pouvoir débuter directement ma reconversion !! A vous de jouer !";
+        // var speed = 50;
+
+        // function typeWriter() {
+        //     if (i < txt.length) {
+        //         document.getElementById("texte").innerHTML += txt.charAt(i);
+        //         i++;
+        //         setTimeout(typeWriter, speed);
+        //     }   
+        // }
+
+
+       ////////// Seconde méthode :
+
+    
+        var chaine = "Bonjour et bienvenue !<br>Développeuse Full-Stack JS Junior, je vous propose de découvrir et de tester certaines de mes skills sous forme de jeu.<br>C'est simple à chaque alien touché c'est 10 points au score et tous les 30 points vous avez une compétence qui apparaît.<br>A vous de jouer !!!"; 
+        var nb_caractere = chaine.length; 
+        var tableau = chaine.split("");
+        texte = new Array;
+        var txt = '';
+        var nb_msg = nb_caractere - 1;
+        for (i=0; i<nb_caractere; i++) {
+            texte[i] = txt+tableau[i];
+            var txt = texte[i];
+        }
+
+        actual_texte = 0;
+        function changeMessage() {
+            document.getElementById("texte").innerHTML = texte[actual_texte];
+            actual_texte++;
+            if(actual_texte >= texte.length)
+            actual_texte = nb_msg;
+        }
+        if(document.getElementById) setInterval("changeMessage()",80) /* la vitesse de defilement (plus on a une valeur faible plus 
+            texte s'affiche rapidement) */
+
+    </script>
+    
+    
+
+
+
+</body>
+</html>
